@@ -26,6 +26,7 @@ input {
   width: fit-content;
   height: fit-content;
   padding: 25px;
+  margin-bottom:50px;
   border: 0.5px solid rgb(60, 60, 60);
 }
 
