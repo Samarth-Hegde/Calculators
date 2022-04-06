@@ -14,7 +14,7 @@ let cur_arr = [];
 let principle;
 let time;
 let rate_of_interest;
-let prd_val = "Years";
+let prd_val = "years";
 let si;
 let ta;
 
@@ -27,7 +27,7 @@ period_select.addEventListener("click", () => {
 });
 
 calc.addEventListener("click", () => {
-  if (prd_val === "Years" && t.value > 0) {
+  if (prd_val === "years" && t.value > 0) {
     time = parseFloat(t.value);
   } else if (prd_val === "days" && t.value > 0) {
     time = parseFloat(t.value) / 365;
