@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Calculators/BMI Calculator/styles.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <nav class="nav-sec">
+      <ul class="nav-list">
+        <li class="nav-li-item">
+          <a class="nav-link" href="/Calculators/Home/index.html">Home</a>
+        </li>
+        <li class="nav-li-item">
+          <a class="nav-link cur" href="/Calculators/BMI Calculator/index.html"
+            >BMI Calculator</a
+          >
+        </li>
+        <li class="nav-li-item">
+          <a class="nav-link" href="/Calculators/SI calculator/index.html"
+            >Simple Interest Calculator</a
+          >
+        </li>
+        <li class="nav-li-item">
+          <a class="nav-link" href="/Calculators/temp_converter/index.html"
+            >Temperature Converter</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1 class="pr-name">BMI Calculator</h1>
+    <div class="calc-container">
+      <div class="calc">
+        <label for="units type" class="inp-labl">Units Type</label>
+        <div class="unit_btn">
+          <button class="units selected" id="metric">Metric units</button>
+          <button class="units" id="us">US/UK Units</button>
+        </div>
+        <div class="hgt-in">
+          <label for="Height" class="inp-labl">Height</label>
+          <div class="hgt-inc">
+            <input
+              class="inp dis-in"
+              type="number"
+              id="ft"
+              placeholder="feet"
+            />
+            <button class="unt-btn dis-in">ft</button>
+            <input
+              class="inp dis-in"
+              type="number"
+              id="in"
+              placeholder="inch"
+            />
+            <button class="unt-btn dis-in">in</button>
+          </div>
+          <div class="hgt-cm dis-cm">
+            <input
+              class="inp dis-cm"
+              type="number"
+              name=""
+              id="cm"
+              placeholder="centimeter"
+            />
+            <button class="unt-btn dis-cm">cm</button>
+          </div>
+          <div id="wt-calc">
+            <label for="weight" class="inp-labl">Weight</label>
+            <input
+              class="inp wt-inp"
+              type="number"
+              name=""
+              id="weight"
+              placeholder="kg"
+            />
+            <button class="unt-btn wt-btn">kg</button>
+          </div>
+          <button class="submit">Calculate</button>
+          <button class="reset">Reset</button>
+        </div>
+        <div class="result hide">
+          <div class="res">
+            <label for="" class="inp-labl">BMI</label>
+            <h5 class="ans" id="BMI"></h5>
+            <button class="unt-btn">kg/m 2</button>
+          </div>
+          <div class="res">
+            <label for="" class="inp-labl">BMI Category</label>
+            <h5 class="ans" id="cat"></h5>
+          </div>
+          <div class="res">
+            <label for="" class="inp-labl">Health Risk</label>
+            <h5 class="ans" id="hlt-rsk"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Calculators/BMI Calculator/index.js"></script>
+  </body>
+</html>

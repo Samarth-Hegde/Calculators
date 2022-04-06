@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&family=Noto+Sans&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Calculators/SI calculator/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav-sec">
+      <ul class="nav-list">
+        <li class="nav-li-item">
+          <a class="nav-link" href="/Calculators/Home/index.html">Home</a>
+        </li>
+        <li class="nav-li-item">
+          <a class="nav-link" href="/Calculators/BMI Calculator/index.html"
+            >BMI Calculator</a
+          >
+        </li>
+        <li class="nav-li-item selected">
+          <a class="nav-link cur" href="/Calculators/SI calculator/index.html"
+            >Simple Interest Calculator</a
+          >
+        </li>
+        <li class="nav-li-item">
+          <a class="nav-link" href="/Calculators/temp_converter/index.html"
+            >Temperature Converter</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1 class="heading">Simple Interest Calculator</h1>
+    <div class="calc">
+      <div class="options sec">
+        <label for="currency">Select currency:</label>
+        <select name="currency" id="cur-dd" class="sel">
+          <option value="$">Dollar ($)</option>
+          <option value="£">Pound (£)</option>
+          <option value="€">Euro (€)</option>
+          <option value="kr">Krona (kr)</option>
+          <option value="lei">Leu (lei)</option>
+          <option value="₺">Lira (₺)</option>
+          <option value="$">Peso ($)</option>
+          <option value="RM">Ringgit (RM)</option>
+          <option value="₹">Rupee (₹)</option>
+          <option value="₪">Shekel (₪)</option>
+          <option value="zł">Zlotty (zł)</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+      <div class="sec">
+        <label for="interest-rate">Principal Amount:</label>
+        <div class="pr-in">
+          <input type="number" name="" id="p" placeholder="Principal" />
+          <div class="in" id="cur-name">$</div>
+        </div>
+      </div>
+      <div class="sec">
+        <label for="interest-rate">Annual Interest Rate:</label>
+        <div class="pr-in">
+          <input type="number" name="" id="r" placeholder="Rate Of Interest" />
+          <div class="in">% per year</div>
+        </div>
+      </div>
+      <div class="sec">
+        <label for="period">Period:</label>
+        <div class="prd">
+          <input type="number" name="" id="t" placeholder="Period" />
+          <select name="period" id="prd-sel" class="sel">
+            <option value="years">Years</option>
+            <option value="days">Days</option>
+            <option value="weeks">Weeks</option>
+            <option value="months">Months</option>
+          </select>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn" id="submit">Calculate</button>
+        <button class="btn" id="clr">Clear</button>
+      </div>
+
+      <div class="sec">
+        <label for="int-amt" id="i-amt-lbl"></label>
+        <div class="temp" id="int-amt"></div>
+      </div>
+      <div class="sec">
+        <label for="int-amt" id="t-amt-lbl"></label>
+        <div class="temp" id="total-amt"></div>
+      </div>
+    </div>
+    <script src="/Calculators/SI calculator/index.js"></script>
+  </body>
+</html>
