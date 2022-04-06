@@ -21,7 +21,7 @@ a:hover {
   background-color: rgb(11, 11, 11);
   padding: 20px;
   border-radius: 5px;
-  transform: translateX(2vw);
+  transform: translateX(1vw);
   transition: all 800ms;
 }
 .heading {
